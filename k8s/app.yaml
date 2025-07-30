@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: iti-Waled
+  name: itiWaled
 spec:
   replicas: 1
   selector:
