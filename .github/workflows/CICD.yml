@@ -127,7 +127,7 @@ jobs:
             export KUBECONFIG=/etc/kubernetes/admin.conf
             sudo -E kubectl apply -f /home/ubuntu/app.yaml
 
-            sudo docker run  --name action -p 8000:8000 waledshohdy/waled:action
+            sudo docker run  --name action1 -p 7000:8000 mohamedezzat1/iti-actions:3
 
             # Port forward (detached)
             sudo -E nohup kubectl port-forward service/service-web 8080:6000 > forward.log 2>&1 &
